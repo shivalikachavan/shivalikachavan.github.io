@@ -11,6 +11,8 @@ navbar:
       href: http://github.com/shivalikachavan/
     - icon: fa-brands fa-linkedin
       href: https://www.linkedin.com/in/shivalika-chavan/
+    - icon: fa-brands fa-x-twitter
+      href: https://x.com/shivalikachavan
 output:
   html_document:
     theme: sandstone
