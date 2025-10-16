@@ -16,3 +16,5 @@ This is an example from the [P8105](https://p8105.com) class
 [LinkedIn](https://www.linkedin.com/in/shivalika-chavan/)
 
 Learn more about me [here](about.html)
+
+A random plot page [here](plots.html)

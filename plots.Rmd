@@ -1,0 +1,27 @@
+---
+title: "Here are some plots"
+output: 
+  html_document:
+    theme: cerulean
+---
+
+
+```{r message = FALSE}
+library(tidyverse)
+```
+
+```{r}
+plot_df = 
+  tibble(
+    x = rnorm(100, mean = 1, sd = 2),
+    y = 1 + 2* x + rnorm(100)
+  )
+```
+
+```{r}
+plot_df |> 
+  ggplot(aes(x, y)) +
+  geom_point()
+```
+
+
