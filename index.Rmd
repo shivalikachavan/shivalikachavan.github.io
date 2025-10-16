@@ -4,9 +4,7 @@ title: "Shivalika Chavan"
 
 <img src="images/headshot.jpg" style="width:75%">
 
-# This is my website
-
-This is an example from the [P8105](https://p8105.com) class 
+This is my website! It's an example from the [P8105](https://p8105.com) class 
 
 Learn more about me [here](about.html)
 

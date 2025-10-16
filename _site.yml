@@ -13,4 +13,4 @@ navbar:
       href: https://www.linkedin.com/in/shivalika-chavan/
 output:
   html_document:
-    theme: cerulean
+    theme: yeti
