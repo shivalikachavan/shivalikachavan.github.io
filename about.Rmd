@@ -1,0 +1,12 @@
+---
+title: "About Me"
+output: 
+  html_document:
+    theme: cerulean
+---
+
+<img src="images/headshot.jpg" style="width:75%">
+
+an about page
+
+Go back to [homepage](index.html)

@@ -7,6 +7,12 @@ output:
     theme: cerulean
 ---
 
-# This is Jeff's awesome website
+<img src="images/headshot.jpg" style="width:75%">
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+# This is my website
+
+This is an example from the [P8105](https://p8105.com) class 
+
+[LinkedIn](https://www.linkedin.com/in/shivalika-chavan/)
+
+Learn more about me [here](about.html)
