@@ -26,6 +26,7 @@ nyc_airbnb =
   )
 ```
 
+Scatterplot
 ```{r}
 nyc_airbnb |> 
   mutate(
@@ -37,6 +38,32 @@ nyc_airbnb |>
     type = "scatter", mode = "markers", alpha = 0.5
   )
 ```
+
+Boxplots
+```{r}
+nyc_airbnb |> 
+  mutate(
+    neighbourhood = fct_reorder(neighbourhood, price)
+  ) |> 
+  plot_ly(
+    x = ~neighbourhood, y = ~price, color = ~neighbourhood,
+    type = "box", colors = "viridis"
+  )
+```
+
+Bar chart
+```{r}
+nyc_airbnb |> 
+  count(neighbourhood) |> 
+  mutate(
+    neighbourhood = fct_reorder(neighbourhood, n)
+  ) |> 
+  plot_ly(
+    x = ~neighbourhood, y = ~n, 
+    type = "bar"
+  ) 
+```
+
 
 Go back to [homepage](index.html)
 
