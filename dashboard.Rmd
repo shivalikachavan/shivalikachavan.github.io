@@ -1,15 +1,19 @@
 ---
-title: "Using plotly"
+title: "Flex Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: sandstone
 ---
 
-
-```{r message = FALSE}
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
 
-Loading airbnb data set
 ```{r}
 data("nyc_airbnb")
 nyc_airbnb =
@@ -26,7 +30,12 @@ nyc_airbnb =
   )
 ```
 
-Scatterplot
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
 ```{r}
 nyc_airbnb |> 
   mutate(
@@ -39,7 +48,11 @@ nyc_airbnb |>
   )
 ```
 
-Boxplots
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
 ```{r}
 nyc_airbnb |> 
   mutate(
@@ -51,7 +64,8 @@ nyc_airbnb |>
   )
 ```
 
-Bar chart
+### Chart C
+
 ```{r}
 nyc_airbnb |> 
   count(neighbourhood) |> 
@@ -63,9 +77,4 @@ nyc_airbnb |>
     type = "bar"
   ) 
 ```
-
-
-
-
-Go back to [homepage](index.html)
 
