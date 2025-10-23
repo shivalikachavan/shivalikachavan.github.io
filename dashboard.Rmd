@@ -52,6 +52,11 @@ rest_inspec |>
   ) |> 
   plot_ly(
     x = ~latitude, y = ~longitude, color = ~cuisine_description,
+    colors = c(
+      "Ice Cream, Gelato, Yogurt, Ices" = "#C3B1E1", 
+      "Donuts" = "#E30B5D", 
+      "Bakery" = "#CDA46E"  
+    ),
     text = ~label,
     type = "scatter", mode = "markers"
   ) |> 
@@ -82,6 +87,11 @@ top_violations =
 top_violations |> 
   plot_ly(
     x = ~count, y = ~violation_code, color = ~cuisine_description,
+    colors = c(
+      "Ice Cream, Gelato, Yogurt, Ices" = "#C3B1E1", 
+      "Donuts" = "#E30B5D", 
+      "Bakery" = "#CDA46E"  
+    ),
     type = "bar"
   ) |> 
   layout(
@@ -105,7 +115,12 @@ rest_inspec |>
   plot_ly(
     x = ~cuisine_description,
     y = ~score,
-    color = ~grade,
+    color = ~grade, 
+    colors = c(
+      "A" = "#244898",  
+      "B" = "#5EAD55", 
+      "C" = "#E49B40"    
+    ),
     type = 'box', boxpoints = "all", pointpos = 0, jitter = 0.1
   ) |>
   layout(
