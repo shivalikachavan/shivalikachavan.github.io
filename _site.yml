@@ -5,9 +5,7 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "Plotly"
-      href: 251021_plotly.html
-    - text: "Dashboard"
+    - text: "p8105 HW4 Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:shivalika.chavan@gmail.com

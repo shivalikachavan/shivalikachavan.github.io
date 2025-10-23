@@ -1,5 +1,5 @@
 ---
-title: "Flex Dashboard"
+title: "P8105 Dashboard - Problem 2"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -15,66 +15,89 @@ library(plotly)
 ```
 
 ```{r}
-data("nyc_airbnb")
-nyc_airbnb =
-  nyc_airbnb |> 
-  mutate(rating = review_scores_location / 2) |> 
-  select(
-    neighbourhood_group, rating, neighbourhood, room_type, price, lat, long
+data("rest_inspec")
+rest_inspec =
+  rest_inspec |> 
+  mutate (
+    temp = latitude,
+    latitude = longitude,
+    longitude = temp
   ) |> 
+  select(-temp) |>
   filter(
-    neighbourhood_group == "Manhattan",
-    room_type == "Entire home/apt",
-    price <= 500,
-    price >= 100
-  )
+    boro == "Manhattan",
+    cuisine_description %in% c("Ice Cream, Gelato, Yogurt, Ices", "Donuts", "Bakery"),
+    latitude != 0,
+    grade == "A"
+    ) 
+
+codes_descriptions = 
+  rest_inspec |> 
+  select(violation_code, violation_description) |> 
+  distinct() |> 
+  group_by(violation_code) |> 
+  ungroup()
 ```
 
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
-
+### Where are the safe sweet treats in Manhattan?
 ```{r}
-nyc_airbnb |> 
+rest_inspec |> 
   mutate(
-    label = str_c("Price: $", price, "\nRating: ", rating)
+    label = str_c(dba, "\n", building, " ", street)
   ) |> 
   plot_ly(
-    x = ~lat, y = ~long, color = ~price,
+    x = ~latitude, y = ~longitude, color = ~cuisine_description,
     text = ~label,
-    type = "scatter", mode = "markers", alpha = 0.5
+    type = "scatter", mode = "markers"
+  ) |> 
+  layout(
+    title = "Sweet Treats with A Grades in Manhattan",
+    xaxis = list(title = "Latitude"),
+    yaxis = list(title = "Longitude")
   )
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
-
+### What are the most common violation codes for safe sweet treats?
 ```{r}
-nyc_airbnb |> 
-  mutate(
-    neighbourhood = fct_reorder(neighbourhood, price)
-  ) |> 
+top_violations = 
+  rest_inspec |>
+  group_by(violation_code, cuisine_description) |>
+  summarize(count = n()) |>
+  mutate(total_violation_count = sum(count)) |>
+  ungroup() |>
+  filter(total_violation_count > 50) |>
+  left_join(codes_descriptions, by = "violation_code") |> 
+  mutate(violation_code = fct_reorder(violation_code, total_violation_count)) |> 
+  arrange(desc(total_violation_count)) 
+
+top_violations |> 
   plot_ly(
-    x = ~neighbourhood, y = ~price, color = ~neighbourhood,
-    type = "box", colors = "viridis"
+    x = ~count, y = ~violation_code, color = ~cuisine_description,
+    type = "bar"
+  ) |> 
+  layout(
+    barmode = "stack",
+    title = "Violation Counts by Code (> 100 total violations)",
+    xaxis = list(title = "Total Violation Count"),
+    yaxis = list(title = "Violation Code")
   )
+
+top_violations |> 
+  select(violation_code, violation_description) |> 
+  distinct() |> 
+  knitr::kable(col.names = c("Code", "Description"))
 ```
 
-### Chart C
+### TBD
 
 ```{r}
-nyc_airbnb |> 
-  count(neighbourhood) |> 
-  mutate(
-    neighbourhood = fct_reorder(neighbourhood, n)
-  ) |> 
-  plot_ly(
-    x = ~neighbourhood, y = ~n, 
-    type = "bar"
-  ) 
+
 ```
 
