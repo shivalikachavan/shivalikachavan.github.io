@@ -1,11 +1,44 @@
 ---
 title: "Shivalika Chavan"
 ---
+<p align="center">
+  <img src="images/headshot.jpg" width="75%">
+</p>
 
-<img src="images/headshot.jpg" style="width:75%">
+I'm Shivalika (shi-VAH-li-kah) Chavan (CHAH-vahn). I’m currently a Master’s student in Biostatistics at Columbia University in New York City.
 
-This is my website! It's an example from the [P8105](https://p8105.com) class 
+Originally a West Coast native, I graduated with my B.S. in Bioengineering (Data Science) with Honors and a Minor in Applied Mathematics from the University of Washington in Seattle. My career has been rooted in quantitative analysis, where I spent four years as a Senior Scientist in the Diagnostics Division at Roche working on the [Axelios SBX technology](https://sequencing.roche.com/global/en/article-listing/sequencing-platform-technologies.html). Previously I interned at Philips Emergency Care and Resuscitation contributing to post-market studies for medical devices (like AEDs) and worked as an undergraduate researcher in neural engineering and optogenetics at the [NERD Lab](https://sites.bioe.uw.edu/yazdan-azadeh/) under Dr. Azadeh Yazdan. 
 
-Learn more about me [here](about.html)
+Download my resume [here](resume.html). 
 
-A random plot page [here](plots.html)
+Outside of work, I’m an avid adventurer, spending my free time hiking, camping, rock climbing, solo traveling, and watercolor painting. I also love football (American football) and basketball. Go 49ers (and Dawgs!!) and Warriors! As someone with a serious sweet tooth, my first mission upon moving to NYC was to locate the best, safest bakeries and ice cream shops in Manhattan. Check out this [dashboard](dashboard.html) I made for my P8105 class. I'm also a huge fan of The Great British Bake Off!
+
+<div class="scroll-container">
+  <img src="images/clouds_rest.jpg" alt="Clouds Rest, Yosemite">
+  <img src="images/whitney.jpg" alt="Mt. Whitney Summit">
+  <img src="images/italy_hike.jpg" alt="Croda Negra - Italian Dolomites">
+  <img src="images/yosemite.jpg" alt="North Dome, Yosemite">
+  <img src="images/painting.JPG" alt="Painting the Painted Ladies in SF">
+  <img src="images/krabi_climbing.jpg" alt="Rock Climbing in Krabi, Thailand">
+  <img src="images/red_rocks.jpg" alt="Spending my birthday in Red Rock, Nevada">
+  <img src="images/cliffs_of_moher.jpg" alt="Cliffs of Moher on a solo trip to Ireland">
+</div>
+
+<style>
+/* CSS to create the scrollable gallery */
+.scroll-container {
+    /* Set the fixed height of the viewing window */
+    max-height: 1000px; 
+    /* This is the key: enables the vertical scroll bar */
+    overflow-y: auto; 
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.scroll-container img {
+    /* Ensures the image fills the container width */
+    width: 100%; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+</style>

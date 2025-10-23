@@ -1,9 +1,0 @@
----
-title: "About Me"
----
-
-<img src="images/headshot.jpg" style="width:75%">
-
-an about page
-
-Go back to [homepage](index.html)
