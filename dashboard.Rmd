@@ -1,5 +1,5 @@
 ---
-title: "P8105 Dashboard - Problem 2"
+title: "P8105 Dashboard - Safe (Grade A) Sweet Treats!"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -16,6 +16,7 @@ library(plotly)
 
 ```{r}
 data("rest_inspec")
+
 rest_inspec =
   rest_inspec |> 
   mutate (
@@ -27,8 +28,7 @@ rest_inspec =
   filter(
     boro == "Manhattan",
     cuisine_description %in% c("Ice Cream, Gelato, Yogurt, Ices", "Donuts", "Bakery"),
-    latitude != 0,
-    grade == "A"
+    latitude != 0
     ) 
 
 codes_descriptions = 
@@ -43,9 +43,10 @@ codes_descriptions =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Where are the safe sweet treats in Manhattan?
+### Where are the "safe" sweet treats in Manhattan?
 ```{r}
 rest_inspec |> 
+  filter(grade == "A") |> 
   mutate(
     label = str_c(dba, "\n", building, " ", street)
   ) |> 
@@ -64,10 +65,11 @@ rest_inspec |>
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### What are the most common violation codes for safe sweet treats?
+### What are the most common violation codes for "safe" sweet treats?
 ```{r}
 top_violations = 
   rest_inspec |>
+  filter(grade == "A") |> 
   group_by(violation_code, cuisine_description) |>
   summarize(count = n()) |>
   mutate(total_violation_count = sum(count)) |>
@@ -84,7 +86,7 @@ top_violations |>
   ) |> 
   layout(
     barmode = "stack",
-    title = "Violation Counts by Code (> 100 total violations)",
+    title = "Violation Counts by Code (> 50 total violations)",
     xaxis = list(title = "Total Violation Count"),
     yaxis = list(title = "Violation Code")
   )
@@ -95,9 +97,29 @@ top_violations |>
   knitr::kable(col.names = c("Code", "Description"))
 ```
 
-### TBD
+### What's wrong with the restaurants that have low score but a C grade?
 
 ```{r}
+rest_inspec |>
+  filter(grade %in% c("A", "B", "C")) |> 
+  plot_ly(
+    x = ~cuisine_description,
+    y = ~score,
+    color = ~grade,
+    type = 'box', boxpoints = "all", pointpos = 0, jitter = 0.1
+  ) |>
+  layout(
+    title = "Inspection Score Distribution by Grade and Cuisine",
+    xaxis = list(title = "Cuisine Type"),
+    yaxis = list(title = "Inspection Score"),
+    boxmode = "group"
+  )
+
+rest_inspec |>
+  filter(grade == "C", score <= 10) |> 
+  select(score, dba, violation_code, violation_description) |> 
+  arrange(desc(violation_code)) |> 
+  knitr::kable(col.names = c("Score", "Restaurant", "Violation Code", "Violation Description"))
 
 ```
 
