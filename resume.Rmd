@@ -2,9 +2,6 @@
 title: "Resume"
 ---
 
-Click to download or view the resume in full screen:
-[View/Download Resume](docs/Shivalika_Chavan_Resume_251123.pdf)
-
 <iframe src="docs/Shivalika_Chavan_Resume_251123.pdf" type="application/pdf" width="100%" height="800px" />
 
 

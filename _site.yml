@@ -9,6 +9,8 @@ navbar:
       menu:
         - text: "Sports Betting & Health Outcomes Data Exploration"
           href: "javascript:window.open('https://shivalikachavan.github.io/house-always-wins/index.html', '_blank');"
+        - text: "Undergraduate Capstone"
+          href: UG_capstone.html
     - icon: fa-envelope fa-lg
       href: mailto:shivalika.chavan@gmail.com
     - icon: fa-github fa-lg
