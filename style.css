@@ -1,18 +1,14 @@
-/* --- 1. GLOBAL VARIABLES (Change these to your liking) --- */
 :root {
-  /* Fonts */
-  --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --heading-font: "Georgia", serif; /* giving headings a different feel */
+  --main-font: "Sequel Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  --heading-font: "Sequel Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
   
-  /* Colors */
-  --bg-color: #f9f9f9;       /* Light grey background (easier on eyes than pure white) */
-  --text-color: #333333;     /* Dark grey text */
-  --accent-color: #007bff;   /* Your Link Blue */
-  --navbar-bg: #ffffff;      /* White navbar */
-  --navbar-text: #555555;
+  --bg-color: #f8f9fa;       
+  --text-color: #34495e;
+  --accent-color: #2980b9;   
+  --navbar-bg: #ffffff;      
+  --navbar-text: #34495e;    
 }
 
-/* --- 2. BASIC LAYOUT & TYPOGRAPHY --- */
 body {
   font-family: var(--main-font);
   background-color: var(--bg-color);
@@ -20,15 +16,29 @@ body {
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
-  padding-top: 70px; /* Space for the fixed navbar */
+  padding-top: 70px; 
+}
+
+h1.title {
+  text-align: center;
+  margin-top: 40px; 
+  margin-bottom: 0px;
+}
+
+.pronunciation {
+  color: #34495e;
+  font-weight: 400;     
+  font-style: italic;   
+  font-size: 0.95em;    
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  color: #222;
-  font-weight: 600;
+  color: #111;
+  font-weight: 700; 
   margin-top: 30px;
   margin-bottom: 15px;
+  letter-spacing: -0.5px; 
 }
 
 a {
@@ -38,22 +48,21 @@ a {
 }
 
 a:hover {
-  color: #0056b3; /* Darker version of blue for hover */
+  color: #2980b9; 
   text-decoration: underline;
 }
 
-/* --- 3. CUSTOM NAVIGATION BAR --- */
-/* This overrides the standard R Markdown bootstrap navbar */
 .navbar {
   background-color: var(--navbar-bg);
   border-bottom: 1px solid #eaeaea;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: none; 
 }
 
 .navbar-default .navbar-brand {
-  color: var(--accent-color);
+  color: #000;
   font-weight: bold;
   font-family: var(--heading-font);
+  letter-spacing: -0.5px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -65,7 +74,6 @@ a:hover {
   color: var(--accent-color);
 }
 
-/* --- 4. YOUR SLIDER CSS (Consolidated here) --- */
 .slides {
     padding: 0;
     width: 100%;
@@ -86,7 +94,6 @@ a:hover {
 }
 
 .slides input { display: none; }
-
 .slide-container { display: block; }
 
 .slide {
@@ -96,7 +103,7 @@ a:hover {
     height: 800px;
     display: block;
     position: absolute;
-    background-color: white; 
+    background-color: #ffffff; 
     transform: scale(1);
     filter: blur(8px);
     transition: all 0.8s ease;
@@ -118,12 +125,11 @@ a:hover {
     text-align: center;
     padding: 15px 10px;
     font-size: 1.1em;
-    font-family: var(--main-font); /* Matches site font */
+    font-family: var(--main-font);
     box-sizing: border-box;
     z-index: 5;
 }
 
-/* Navigation Arrow Styling (Option 3: Minimalist) */
 .nav label {
     width: 80px;
     height: auto; 
@@ -136,7 +142,7 @@ a:hover {
     cursor: pointer;
     transition: all 0.2s;
     background-color: transparent; 
-    color: var(--accent-color); /* Uses the global variable */
+    color: var(--accent-color); 
     font-size: 80pt;
     text-align: center;
     line-height: 100%;
@@ -150,10 +156,8 @@ input:checked + .slide-container .slide {
     opacity: 1;
     filter: blur(0px);
 }
-
 input:checked + .slide-container .nav label { display: block; }
 
-/* Dots */
 .nav-dots {
     width: 100%;
     bottom: -25px;
@@ -177,7 +181,6 @@ input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots .nav-dot:hover { cursor: pointer; background-color: rgba(0, 0, 0, 0.5); }
 
-/* Active Dot Logic */
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
