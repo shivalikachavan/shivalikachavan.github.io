@@ -156,7 +156,6 @@ Outside of work, I’m an avid adventurer, spending my free time hiking, camping
     height: 800px;
     display: block;
     position: absolute;
-    /* BLANK BACKGROUND */
     background-color: white; 
     transform: scale(1);
     filter: blur(8px);
@@ -192,12 +191,9 @@ Outside of work, I’m an avid adventurer, spending my free time hiking, camping
     z-index: 9;
     cursor: pointer;
     transition: opacity .2s;
-    /* UPDATED ARROW COLOR (Standard Link Blue) */
-    color: #007bff; 
     font-size: 100pt; 
     text-align: center;
     line-height: 800px; 
-    /* Removed text-shadow for a cleaner look */
     text-shadow: none;
 }
 
