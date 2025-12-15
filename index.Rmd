@@ -2,26 +2,27 @@
 title: "Shivalika Chavan"
 ---
 <p align="center">
-  <img src="images/headshot.jpg" width="75%">
+  <img src="images/headshot.jpg" width="60%">
 </p>
 
-I'm Shivalika (shi-VAH-li-kah) Chavan (CHAH-vahn). I’m currently a Master’s student in Biostatistics at Columbia University in New York City.
 
-Originally a West Coast native, I graduated with my B.S. in Bioengineering (Data Science) with Honors and a Minor in Applied Mathematics from the University of Washington in Seattle. My career has been rooted in quantitative analysis, where I spent four years as a Senior Scientist in the Diagnostics Division at Roche working on the [Axelios SBX technology](https://sequencing.roche.com/global/en/article-listing/sequencing-platform-technologies.html). Previously I interned at Philips Emergency Care and Resuscitation contributing to post-market studies for medical devices (like AEDs) and worked as an undergraduate researcher in neural engineering and optogenetics at the [NERD Lab](https://sites.bioe.uw.edu/yazdan-azadeh/) under Dr. Azadeh Yazdan. 
+I'm Shivalika (shi-VAH-li-kah) Chavan (CHAH-vahn). I’m currently a Master’s student in Biostatistics at Columbia University in New York City. Looking ahead, I plan to focus my graduate work on leveraging data science for public health solutions—a passion I recently demonstrated as a Runner-Up at the [PRI Narrative 2 Numbers Hackathon](https://pandemicresponse.columbia.edu/pris-narrative-2-numbers-hackathon-turned-qualitative-insights-into-actionable-ideas/), where my team designed a community-driven outbreak detection system.
 
-Download my resume [here](resume.html). 
+Originally a West Coast native, I graduated with my B.S. in Bioengineering (Data Science) with Honors and a Minor in Applied Mathematics from the University of Washington in Seattle. My career has been rooted in quantitative analysis, where I spent four years as a Senior Scientist in the Diagnostics Division at Roche working on the [Axelios SBX technology](https://sequencing.roche.com/global/en/article-listing/sequencing-platform-technologies.html). Previously I interned at Philips Emergency Care and Resuscitation contributing to post-market studies for medical devices (like AEDs) and worked as an undergraduate researcher in neural engineering and optogenetics at the [NERD Lab](https://sites.bioe.uw.edu/yazdan-azadeh/) under Dr. Azadeh Yazdan.
 
-Outside of work, I’m an avid adventurer, spending my free time hiking, camping, rock climbing, solo traveling, and watercolor painting. I also love football (American football) and basketball. Go 49ers (and Dawgs!!) and Warriors! As someone with a serious sweet tooth, my first mission upon moving to NYC was to locate the best, safest bakeries and ice cream shops in Manhattan. Check out this [dashboard](dashboard.html) I made for my P8105 class. I'm also a huge fan of The Great British Bake Off!
+Download my resume [here](resume.html).
+
+Outside of work, I’m an avid adventurer, spending my free time hiking, camping, rock climbing, solo traveling, and watercolor painting. I also love football (American football) and basketball. Go 49ers (and Dawgs!!) and Warriors! Check out some photos from my recent adventures:
 
 <div class="scroll-container">
-  <img src="images/clouds_rest.jpg" alt="Clouds Rest, Yosemite">
-  <img src="images/whitney.jpg" alt="Mt. Whitney Summit">
-  <img src="images/italy_hike.jpg" alt="Croda Negra - Italian Dolomites">
-  <img src="images/yosemite.jpg" alt="North Dome, Yosemite">
-  <img src="images/painting.JPG" alt="Painting the Painted Ladies in SF">
-  <img src="images/krabi_climbing.jpg" alt="Rock Climbing in Krabi, Thailand">
-  <img src="images/red_rocks.jpg" alt="Spending my birthday in Red Rock, Nevada">
   <img src="images/cliffs_of_moher.jpg" alt="Cliffs of Moher on a solo trip to Ireland">
+  <img src="images/red_rocks.jpg" alt="Spending my birthday in Red Rock, Nevada">
+  <img src="images/krabi_climbing.jpg" alt="Rock Climbing in Krabi, Thailand">
+  <img src="images/painting.JPG" alt="The Painted Ladies in SF in watercolor">
+  <img src="images/yosemite.jpg" alt="North Dome, Yosemite">
+  <img src="images/italy_hike.jpg" alt="Croda Negra - Italian Dolomites">
+  <img src="images/whitney.jpg" alt="Mt. Whitney Summit">
+  <img src="images/clouds_rest.jpg" alt="Clouds Rest, Yosemite">
 </div>
 
 <style>

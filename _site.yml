@@ -5,8 +5,10 @@ navbar:
   right:
     - text: "Resume"
       href: resume.html
-    - text: "p8105 HW4 Dashboard"
-      href: dashboard.html
+    - text: "Data Science Projects"
+      menu:
+        - text: "Sports Betting & Health Outcomes Data Exploration"
+          href: https://shivalikachavan.github.io/house-always-wins/index.html
     - icon: fa-envelope fa-lg
       href: mailto:shivalika.chavan@gmail.com
     - icon: fa-github fa-lg
