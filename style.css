@@ -36,8 +36,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: #111;
   font-weight: normal;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   letter-spacing: -0.5px; 
 }
 
