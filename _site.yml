@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "Resume"
       href: resume.html
-    - text: "Data Science Projects"
+    - text: "Featured Projects"
       menu:
         - text: "Sports Betting & Health Outcomes Data Exploration"
           href: https://shivalikachavan.github.io/house-always-wins/index.html

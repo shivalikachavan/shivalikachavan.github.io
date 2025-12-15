@@ -252,7 +252,7 @@ $(document).ready(function () {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Data Science Projects
+    Featured Projects
      
     <span class="caret"></span>
   </a>
@@ -329,32 +329,240 @@ hiking, camping, rock climbing, solo traveling, and watercolor painting.
 I also love football (American football) and basketball. Go 49ers (and
 Dawgs!!) and Warriors! Check out some photos from my recent
 adventures:</p>
-<div class="scroll-container">
-<p><img src="images/cliffs_of_moher.jpg" alt="Cliffs of Moher on a solo trip to Ireland">
-<img src="images/red_rocks.jpg" alt="Spending my birthday in Red Rock, Nevada">
-<img src="images/krabi_climbing.jpg" alt="Rock Climbing in Krabi, Thailand">
-<img src="images/painting.jpg" alt="The Painted Ladies in SF in watercolor">
-<img src="images/yosemite.jpg" alt="North Dome, Yosemite">
-<img src="images/italy_hike.jpg" alt="Croda Negra - Italian Dolomites">
-<img src="images/whitney.jpg" alt="Mt. Whitney Summit">
-<img src="images/clouds_rest.jpg" alt="Clouds Rest, Yosemite"></p>
-</div>
+<ul class="slides">
+
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="images/cliffs_of_moher.jpg" alt="Cliffs of Moher on a solo trip to Europe July 2025" />
+            <div class="caption">Cliffs of Moher on a solo trip to Europe July 2025.</div>
+        </div>
+        <div class="nav">
+            <label for="img-8" class="prev">&#x2039;</label>
+            <label for="img-2" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="images/red_rocks.jpg" alt="Celebrating my birthday in Red Rock, Nevada. February 2025." />
+            <div class="caption">Celebrating my birthday in Red Rock, Nevada. February 2025.</div>
+        </div>
+        <div class="nav">
+            <label for="img-1" class="prev">&#x2039;</label>
+            <label for="img-3" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="images/krabi_climbing.jpg" alt="Rock Climbing in Krabi, Thailand. January 2025." />
+            <div class="caption">Rock Climbing in Krabi, Thailand. January 2025.</div>
+        </div>
+        <div class="nav">
+            <label for="img-2" class="prev">&#x2039;</label>
+            <label for="img-4" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="images/painting.jpg" alt="Painted Ladies in SF in watercolor. June 2024." />
+            <div class="caption">Painted Ladies in SF in watercolor. June 2024.</div>
+        </div>
+        <div class="nav">
+            <label for="img-3" class="prev">&#x2039;</label>
+            <label for="img-5" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="images/yosemite.jpg" alt="North Dome, Yosemite. June 2024." />
+            <div class="caption">North Dome, Yosemite. June 2024.</div>
+        </div>
+        <div class="nav">
+            <label for="img-4" class="prev">&#x2039;</label>
+            <label for="img-6" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-6" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="images/italy_hike.jpg" alt="Croda Negra, Italian Dolomites. October 2023." />
+            <div class="caption">Croda Negra, Italian Dolomites. October 2023.</div>
+        </div>
+        <div class="nav">
+            <label for="img-5" class="prev">&#x2039;</label>
+            <label for="img-7" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-7" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="images/whitney.jpg" alt="At the summit of Mt. Whitney. August 2023." />
+            <div class="caption">At the summit of Mt. Whitney. August 2023.</div>
+        </div>
+        <div class="nav">
+            <label for="img-6" class="prev">&#x2039;</label>
+            <label for="img-8" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-8" />
+    <li class="slide-container">
+        <div class="slide">
+            <img src="images/clouds_rest.jpg" alt="Clouds Rest, Yosemite. July 2022." />
+            <div class="caption">Clouds Rest, Yosemite. July 2022.</div>
+        </div>
+        <div class="nav">
+            <label for="img-7" class="prev">&#x2039;</label>
+            <label for="img-1" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+      <label for="img-7" class="nav-dot" id="img-dot-7"></label>
+      <label for="img-8" class="nav-dot" id="img-dot-8"></label>
+    </li>
+</ul>
+
 <style>
-/* CSS to create the scrollable gallery */
-.scroll-container {
-    /* Set the fixed height of the viewing window */
-    max-height: 1000px; 
-    /* This is the key: enables the vertical scroll bar */
-    overflow-y: auto; 
-    border: 1px solid #ddd;
-    padding: 10px;
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 800px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
 }
 
-.scroll-container img {
-    /* Ensures the image fills the container width */
-    width: 100%; 
-    height: auto;
-    margin-bottom: 10px; 
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 800px;
+    display: block;
+    position: absolute;
+    /* BLANK BACKGROUND */
+    background-color: white; 
+    transform: scale(1);
+    filter: blur(8px);
+    transition: all 0.8s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.nav label {
+    width: 100px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    /* UPDATED ARROW COLOR (Standard Link Blue) */
+    color: #007bff; 
+    font-size: 100pt; 
+    text-align: center;
+    line-height: 800px; 
+    /* Removed text-shadow for a cleaner look */
+    text-shadow: none;
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: -25px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    z-index: 10; 
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8 {
+    background: rgba(0, 0, 0, 1);
 }
 </style>
 
