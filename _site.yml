@@ -19,5 +19,4 @@ navbar:
       href: https://x.com/shivalikachavan
 output:
   html_document:
-    theme: flatly
     css: style.css

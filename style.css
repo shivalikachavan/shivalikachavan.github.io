@@ -1,12 +1,12 @@
 :root {
   --main-font: "Sequel Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-  --heading-font: "Sequel Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  --heading-font: "Century Schoolbook", Georgia, serif;
   
-  --bg-color: #f8f9fa;       
+  --bg-color: #ffffff;       
   --text-color: #34495e;
   --accent-color: #2980b9;   
   --navbar-bg: #ffffff;      
-  --navbar-text: #34495e;    
+  --navbar-text: #2980b9;    
 }
 
 body {
@@ -35,7 +35,7 @@ h1.title {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: #111;
-  font-weight: 700; 
+  font-weight: normal;
   margin-top: 30px;
   margin-bottom: 15px;
   letter-spacing: -0.5px; 
