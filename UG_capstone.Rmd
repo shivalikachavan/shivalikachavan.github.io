@@ -3,9 +3,9 @@ title: "Undergraduate Capstone"
 output: html_document
 ---
 
-Here is an overview of the project. You can find the video and the detailed report in the sections that follow.
+Here is an overview of my undergraduate capstone project, completed at the University of Washington. You can find the video and the detailed report in the sections that follow.
 
-Stroke is a leading cause of long-term disability, yet the complex network dynamics that lead to functional deficits remain poorly understood. This project characterizes the immediate neurophysiological changes in the sensorimotor cortex of non-human primates following a focal ischemic lesion. Using the photothrombotic stroke technique and high-resolution electrocorticography (ECoG), we analyzed local field potentials to map connectivity changes. My results reveal a distinct decoupling of low-frequency communication alongside a compensatory increase in high-frequency synchronization in the perilesional area. These findings provide critical insights into the brain's immediate response to injury and help lay the groundwork for developing targeted stimulation-based therapies for stroke recovery.cv xxxbfdfffffffffffffffffffffsfsffffsfsfffffssf
+Stroke is a leading cause of long-term disability, yet the complex network dynamics that lead to functional deficits remain poorly understood. This project characterizes the immediate neurophysiological changes in the sensorimotor cortex of non-human primates following a focal ischemic lesion. Using the photothrombotic stroke technique and high-resolution electrocorticography (ECoG), we analyzed local field potentials to map connectivity changes. My results reveal a distinct decoupling of low-frequency communication alongside a compensatory increase in high-frequency synchronization in the perilesional area. These findings provide critical insights into the brain's immediate response to injury and help lay the groundwork for developing targeted stimulation-based therapies for stroke recovery.
 
 <div style="text-align: center;">
   <iframe 
