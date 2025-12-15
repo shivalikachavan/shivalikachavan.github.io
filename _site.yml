@@ -12,11 +12,11 @@ navbar:
     - icon: fa-envelope fa-lg
       href: mailto:shivalika.chavan@gmail.com
     - icon: fa-github fa-lg
-      href: http://github.com/shivalikachavan/
+      href: "javascript:window.open('http://github.com/shivalikachavan/', '_blank');"
     - icon: fa-brands fa-linkedin
-      href: https://www.linkedin.com/in/shivalika-chavan/
+      href: "javascript:window.open('https://www.linkedin.com/in/shivalika-chavan/', '_blank');"
     - icon: fa-brands fa-x-twitter
-      href: https://x.com/shivalikachavan
+      href: "javascript:window.open('https://x.com/shivalikachavan', '_blank');"
 output:
   html_document:
     css: style.css
